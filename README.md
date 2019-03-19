@@ -6,3 +6,4 @@ Testing with Jasmine Framework
 -beforeEach/afterEach/beforeAll/afterAll kullanmak kod tekrarlamalarını ve karışıklığı azaltır.
 -Jasmine ayrıca bize fonksiyonların davranışlarını gözetmemiz için spies sunar.
 -Jasmine zamanlayıcıları test etmemiz için bir clock objesi,asynchronous kodu testi için de callback fonksiyonu sağlar.
+s
