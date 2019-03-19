@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jasmine Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js">
+  </script>
+<script>
+  describe("Jasmine Matchers",function(){
+   it("derin eşitliğe izin verir === ",function(){
+     expect([1,2,3]).toEqual([1,2,3])
+     expect(1+1).toBe(2)
+   });
+   it("kolay hassasiyet kontrolü sağlar",function(){
+     expect(3,14).toBeCloseTo(3,14,2)
+   });
+    it("doğruluğunu/yanlışlığını kontrol eder",function(){
+      expect(0).toBeFalsy();
+      expect([]).toBeTruthy();
+    });
+    it("bir objenin içeriklerini kontrol eder",function(){
+      expect([1,2,3]).toContain(1);
+      expect({name:"Ibrahim"}).toEqual(jasmine.objectContaining({name:"Ibrahim"}))
+    });
+    it("type checking yapar ",function(){
+      expect([]).toEqual(jasmine.any(Array))
+      expect(function(){}).toEqual(jasmine.any(Function));
+    });
+    
+  });
+  
+  
+</script>
+</body>
+</html>
